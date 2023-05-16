@@ -101,11 +101,97 @@
             }
         }
 
+        #slider2 {
+            overflow: hidden;
+        }
+
+        #slider2 figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 30s slider infinite;
+        }
+
+        #slider2 figure img {
+            float: left;
+            width: 20%;
+            height: 300px;
+            object-fit: cover;
+            -webkit-transition: 0.3s ease-in-out;
+            -o-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
+        }
+
+        #slider2 figure video {
+            float: left;
+            width: 20%;
+            height: 300px;
+            object-fit: cover;
+            -webkit-transition: 0.3s ease-in-out;
+            -o-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
+        }
+
+        #slider2 figure a:hover {
+            opacity: 0.9;
+            -webkit-transition: 0.5s ease-in-out;
+            -o-transition: 0.5s ease-in-out;
+            transition: 0.5s ease-in-out;
+        }
+
+        #slider2 figure p {
+            float: left;
+            width: 20%;
+            background-color: #FA954E;
+            color: #fdfdfd;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        @keyframes slider2 {
+            0% {
+                left: 0;
+            }
+
+            20% {
+                left: 0;
+            }
+
+            25% {
+                left: -100%;
+            }
+
+            45% {
+                left: -100%;
+            }
+
+            50% {
+                left: -200%;
+            }
+
+            70% {
+                left: -200%;
+            }
+
+            75% {
+                left: -300%;
+            }
+
+            95% {
+                left: -300%;
+            }
+
+            100% {
+                left: -400%;
+            }
+        }
+
         .card-reveal img {
             width: 100%;
         }
         .card-image img {
-            height: 300px;
+            height: 250px;
             object-fit: cover;
             transition: 3s;
         }
@@ -149,9 +235,6 @@
 
                     </ul>
                 </div>
-                <ul class="hide-on-med-and-down right">
-
-                </ul>
                 <ul id="slide-out" class="sidenav">
                     <li class="center-align" style="text-shadow: 2px 2px #000;">DNK TALENT</li>
                     <li><a href="index.html">Naslovnica</a></li>
@@ -175,14 +258,49 @@
 
                 <!-- menu on small screen -->
                 <a href="#" data-target="slide-out" class="sidenav-trigger right">
-                    <i class="material-icons">menu</i>
+                    <i class="material-icons" style="color: #fdfdfd;">menu</i>
                 </a>
             </div>
         </nav>
 
     </header>
     <main>
-        <div id="slider">
+        <div id="slider" class="hide-on-med-and-down">
+            <figure>
+                <p>Pioniri</p>
+                <p>Kadeti</p>
+                <p>Početnici</p>
+                <p>Juniori</p>
+                <p>Pioniri</p>
+            </figure>
+            <figure>
+                <a href="vijesti.html#pioniri">
+                    <img src="slike/sloga.jpg" alt="hrvace">
+                </a>
+                <a href="https://youtu.be/7JbZfW9gQ_Q">
+                    <video muted autoplay loop>
+                        <source src="multimedija/video.mp4" type="video/mp4">
+                        <source src="multimedija/video.ogv" type="video/ogg">
+                        <source src="multimedija/video.webm" type="video/webm">
+                    </video>
+                </a>
+                <a href="vijesti.html#pocetnici">
+                    <img src="slike/zasluzeno.jpg" alt="hrvace">
+                </a>
+                <a href="https://youtu.be/J2NmYFYcRgQ">
+                    <video muted autoplay loop>
+                        <source src="multimedija/gol.mp4" type="video/mp4">
+                        <source src="multimedija/gol.ogv" type="video/ogg">
+                        <source src="multimedija/gol.webm" type="video/webm">
+                    </video>
+                </a>
+                <!-- OVA SLIKA TREBA BIT ISTA KA I PRVA DA BI RADIA SLIDER -->
+                <a href="vijesti.html#pioniri">
+                    <img src="slike/sloga.jpg" alt="hrvace">
+                </a>
+            </figure>
+        </div>
+        <div id="slider2" class="hide-on-large-only">
             <figure>
                 <p>Pioniri</p>
                 <p>Kadeti</p>
