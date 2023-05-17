@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     background-color: #fdfdfd;
     color: #000;
-    font-size: 20pt;
+    font-size: 16pt;
     line-height: 1.3;
     font-family: Helvetica (sans-serif), Arial (sans-serif), Arial (sans-serif);
     margin: 0;
@@ -24,7 +24,7 @@ body {
 /* TEKST */
 h1 {
     color: #0580FF;
-    font-size: 30pt;
+    font-size: 25pt;
     text-transform: uppercase;
     text-align: center;
     font-family: 'Rubik';
@@ -33,7 +33,7 @@ h1 {
 
 h2 {
     color: #000;
-    font-size: 30pt;
+    font-size: 25pt;
     text-transform: uppercase;
     text-align: center;
     font-family: 'Rubik';
@@ -42,7 +42,7 @@ h2 {
 
 h3 {
     color: #000;
-    font-size: 30pt;
+    font-size: 25pt;
     text-transform: uppercase;
     font-family: 'Rubik';
     font-weight: bold;
@@ -54,6 +54,7 @@ p {
 
 .datum {
     color: gray;
+    font-size: 14pt;
 }
 
 /* .velikifont {
@@ -114,6 +115,16 @@ img {
     width: 100%;
     height: 220px;
     object-fit: cover;
+}
+
+.btn-small {
+    color: #fdfdfd;
+    background-color: #FA954E;
+}
+
+.btn-small:visited {
+    color: #fdfdfd;
+    background-color: #FA954E;
 }
 
 .zoom {
@@ -287,11 +298,11 @@ nav ul li a:hover .material-icons {
 }
 
 .sidenav-overlay {
-    z-index: 1;
+    z-index: 2;
 }
 
 .botunzalinkove {
-    z-index: 1001;
+    z-index: 1;
 }
 /* TAB */
 .tabs .tab a {
@@ -338,12 +349,12 @@ main {
 
 footer h1 {
     color: #fdfdfd;
-    font-size: 60pt;
+    font-size: 30pt;
 }
 
 footer h1 .material-icons {
     color: #fdfdfd;
-    font-size: 50pt;
+    font-size: 25pt;
 }
 
 footer a {
