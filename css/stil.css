@@ -197,12 +197,6 @@ h4 {
     color: #000;
 }
 
-.carousel-item {
-    position: relative;
-    height: 500px !important;
-    min-height: 100%;
-}
-
 .collapsible-header {
     background-color: #000;
     color: #fdfdfd;
